@@ -30,5 +30,16 @@ public class RecipeService {
 		recipeRepository.saveAll(recipeList);		
 	}
 
+	public void updateRecipe(Recipe recipe) {
+		// TODO Auto-generated method stub
+		recipeRepository.save(recipe);
+		
+	}
+
+	public void deleteRecipeById(Long id) {
+		// TODO Auto-generated method stub
+		recipeRepository.deleteById(id);
+	}
+
 
 }
